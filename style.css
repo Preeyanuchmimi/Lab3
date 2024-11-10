@@ -1,0 +1,45 @@
+body {
+    background-color: aqua;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(5, 10, 10);
+    }
+}
+.container{
+    display: flex;
+}
+.container .item {
+    padding: 10px;
+    flex: 1;
+    background-color: rgb(94, 204, 235);
+    border-color: aliceblue(145, 100, 33) 1px;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+    
+.grid-container .item {
+    padding: 10px;
+    flex: 1;
+    background-color: rgb(51, 255, 51);
+    border: rgb(0, 0, 0) solid 1px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and  (max-width: 960px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+@media only screen and  (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr ;
+    }
+}
